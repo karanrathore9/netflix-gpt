@@ -54,7 +54,6 @@ const Login = () => {
               );
 
               console.log(user, "SUCCESSSSSS");
-              navigate("/browse");
             })
             .catch((error) => {
               setErrorMessages(error.message);
@@ -77,7 +76,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user, "Successfully Signed Inn");
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
