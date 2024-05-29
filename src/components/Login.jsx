@@ -53,7 +53,6 @@ const Login = () => {
                 })
               );
 
-              console.log(user, "SUCCESSSSSS");
             })
             .catch((error) => {
               setErrorMessages(error.message);
@@ -75,7 +74,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user, "Successfully Signed Inn");
         })
         .catch((error) => {
           const errorCode = error.code;
